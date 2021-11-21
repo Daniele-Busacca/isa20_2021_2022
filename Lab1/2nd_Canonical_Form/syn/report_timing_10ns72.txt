@@ -1,0 +1,114 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_Filter
+Version: O-2018.06-SP4
+Date   : Sat Nov  6 14:30:37 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Reg_3/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Reg_10/Q_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_Filter         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Reg_3/Q_reg[1]/CK (DFFR_X1)                             0.00       0.00 r
+  Reg_3/Q_reg[1]/Q (DFFR_X1)                              0.16       0.16 r
+  Reg_3/Q[1] (Reg_n8_2)                                   0.00       0.16 r
+  Multiplier_2/A[1] (Multiplier_n8_4)                     0.00       0.16 r
+  Multiplier_2/mult_16/a[1] (Multiplier_n8_4_DW_mult_tc_0)
+                                                          0.00       0.16 r
+  Multiplier_2/mult_16/U176/Z (BUF_X1)                    0.10       0.26 r
+  Multiplier_2/mult_16/U268/Z (XOR2_X1)                   0.10       0.36 r
+  Multiplier_2/mult_16/U159/ZN (INV_X1)                   0.06       0.42 f
+  Multiplier_2/mult_16/U263/ZN (NAND2_X1)                 0.08       0.50 r
+  Multiplier_2/mult_16/U195/ZN (OAI22_X1)                 0.06       0.56 f
+  Multiplier_2/mult_16/U37/S (HA_X1)                      0.08       0.64 f
+  Multiplier_2/mult_16/U260/ZN (AOI222_X1)                0.11       0.75 r
+  Multiplier_2/mult_16/U162/ZN (INV_X1)                   0.03       0.78 f
+  Multiplier_2/mult_16/U259/ZN (AOI222_X1)                0.09       0.87 r
+  Multiplier_2/mult_16/U161/ZN (INV_X1)                   0.03       0.90 f
+  Multiplier_2/mult_16/U258/ZN (AOI222_X1)                0.09       0.99 r
+  Multiplier_2/mult_16/U160/ZN (INV_X1)                   0.03       1.02 f
+  Multiplier_2/mult_16/U10/CO (FA_X1)                     0.09       1.11 f
+  Multiplier_2/mult_16/U9/CO (FA_X1)                      0.09       1.20 f
+  Multiplier_2/mult_16/U8/CO (FA_X1)                      0.09       1.29 f
+  Multiplier_2/mult_16/U7/CO (FA_X1)                      0.09       1.38 f
+  Multiplier_2/mult_16/U6/CO (FA_X1)                      0.09       1.47 f
+  Multiplier_2/mult_16/U5/S (FA_X1)                       0.14       1.61 r
+  Multiplier_2/mult_16/product[11] (Multiplier_n8_4_DW_mult_tc_0)
+                                                          0.00       1.61 r
+  Multiplier_2/Z[11] (Multiplier_n8_4)                    0.00       1.61 r
+  Adder_2/A[5] (Adder_n7_0)                               0.00       1.61 r
+  Adder_2/add_16/A[5] (Adder_n7_0_DW01_add_0)             0.00       1.61 r
+  Adder_2/add_16/U1_5/S (FA_X1)                           0.12       1.72 f
+  Adder_2/add_16/SUM[5] (Adder_n7_0_DW01_add_0)           0.00       1.72 f
+  Adder_2/Z[5] (Adder_n7_0)                               0.00       1.72 f
+  Adder_1/B[5] (Adder_n8_0)                               0.00       1.72 f
+  Adder_1/add_16/B[5] (Adder_n8_0_DW01_add_0)             0.00       1.72 f
+  Adder_1/add_16/U1_5/S (FA_X1)                           0.21       1.93 r
+  Adder_1/add_16/SUM[5] (Adder_n8_0_DW01_add_0)           0.00       1.93 r
+  Adder_1/Z[5] (Adder_n8_0)                               0.00       1.93 r
+  Multiplier_1/A[5] (Multiplier_n8_0)                     0.00       1.93 r
+  Multiplier_1/mult_16/a[5] (Multiplier_n8_0_DW_mult_tc_0)
+                                                          0.00       1.93 r
+  Multiplier_1/mult_16/U165/ZN (INV_X1)                   0.05       1.98 f
+  Multiplier_1/mult_16/U238/ZN (XNOR2_X1)                 0.06       2.04 r
+  Multiplier_1/mult_16/U237/ZN (NAND2_X1)                 0.06       2.10 f
+  Multiplier_1/mult_16/U198/ZN (OAI22_X1)                 0.08       2.18 r
+  Multiplier_1/mult_16/U35/S (HA_X1)                      0.08       2.26 r
+  Multiplier_1/mult_16/U34/S (FA_X1)                      0.12       2.38 f
+  Multiplier_1/mult_16/U251/ZN (AOI222_X1)                0.11       2.49 r
+  Multiplier_1/mult_16/U159/ZN (INV_X1)                   0.03       2.52 f
+  Multiplier_1/mult_16/U10/CO (FA_X1)                     0.09       2.61 f
+  Multiplier_1/mult_16/U9/CO (FA_X1)                      0.09       2.70 f
+  Multiplier_1/mult_16/U8/CO (FA_X1)                      0.09       2.79 f
+  Multiplier_1/mult_16/U7/CO (FA_X1)                      0.09       2.88 f
+  Multiplier_1/mult_16/U6/CO (FA_X1)                      0.09       2.97 f
+  Multiplier_1/mult_16/U5/CO (FA_X1)                      0.09       3.06 f
+  Multiplier_1/mult_16/U4/CO (FA_X1)                      0.09       3.15 f
+  Multiplier_1/mult_16/U3/S (FA_X1)                       0.14       3.29 r
+  Multiplier_1/mult_16/product[13] (Multiplier_n8_0_DW_mult_tc_0)
+                                                          0.00       3.29 r
+  Multiplier_1/Z[13] (Multiplier_n8_0)                    0.00       3.29 r
+  Adder_3/A[7] (Adder_n8_1)                               0.00       3.29 r
+  Adder_3/add_16/A[7] (Adder_n8_1_DW01_add_0)             0.00       3.29 r
+  Adder_3/add_16/U1_7/S (FA_X1)                           0.11       3.40 f
+  Adder_3/add_16/SUM[7] (Adder_n8_1_DW01_add_0)           0.00       3.40 f
+  Adder_3/Z[7] (Adder_n8_1)                               0.00       3.40 f
+  Reg_10/D[7] (Reg_n8_0)                                  0.00       3.40 f
+  Reg_10/U3/ZN (NAND2_X1)                                 0.03       3.43 r
+  Reg_10/U2/ZN (OAI21_X1)                                 0.03       3.46 f
+  Reg_10/Q_reg[7]/D (DFFR_X1)                             0.01       3.47 f
+  data arrival time                                                  3.47
+
+  clock MY_CLK (rise edge)                               10.72      10.72
+  clock network delay (ideal)                             0.00      10.72
+  clock uncertainty                                      -0.07      10.65
+  Reg_10/Q_reg[7]/CK (DFFR_X1)                            0.00      10.65 r
+  library setup time                                     -0.04      10.61
+  data required time                                                10.61
+  --------------------------------------------------------------------------
+  data required time                                                10.61
+  data arrival time                                                 -3.47
+  --------------------------------------------------------------------------
+  slack (MET)                                                        7.14
+
+
+1

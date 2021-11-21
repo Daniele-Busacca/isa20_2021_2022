@@ -1,0 +1,122 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_Filter
+Version: O-2018.06-SP4
+Date   : Sat Nov  6 14:25:47 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Reg_3/Q_reg[3]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Reg_10/Q_reg[7]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_Filter         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Reg_3/Q_reg[3]/CK (DFFR_X1)                             0.00       0.00 r
+  Reg_3/Q_reg[3]/Q (DFFR_X1)                              0.11       0.11 r
+  Reg_3/Q[3] (Reg_n8_2)                                   0.00       0.11 r
+  Multiplier_2/A[3] (Multiplier_n8_4)                     0.00       0.11 r
+  Multiplier_2/mult_16/a[3] (Multiplier_n8_4_DW_mult_tc_0)
+                                                          0.00       0.11 r
+  Multiplier_2/mult_16/U184/Z (CLKBUF_X3)                 0.07       0.19 r
+  Multiplier_2/mult_16/U294/ZN (XNOR2_X1)                 0.07       0.26 r
+  Multiplier_2/mult_16/U292/ZN (OAI22_X1)                 0.05       0.31 f
+  Multiplier_2/mult_16/U233/Z (XOR2_X1)                   0.07       0.38 f
+  Multiplier_2/mult_16/U200/ZN (NAND2_X1)                 0.03       0.41 r
+  Multiplier_2/mult_16/U201/ZN (AND3_X1)                  0.06       0.47 r
+  Multiplier_2/mult_16/U226/ZN (OAI222_X1)                0.05       0.52 f
+  Multiplier_2/mult_16/U245/ZN (NAND2_X1)                 0.04       0.56 r
+  Multiplier_2/mult_16/U235/ZN (NAND3_X1)                 0.04       0.60 f
+  Multiplier_2/mult_16/U269/ZN (NAND2_X1)                 0.04       0.64 r
+  Multiplier_2/mult_16/U191/ZN (NAND3_X1)                 0.04       0.68 f
+  Multiplier_2/mult_16/U273/ZN (NAND2_X1)                 0.03       0.71 r
+  Multiplier_2/mult_16/U275/ZN (NAND3_X1)                 0.05       0.76 f
+  Multiplier_2/mult_16/U186/ZN (XNOR2_X1)                 0.07       0.83 f
+  Multiplier_2/mult_16/product[8] (Multiplier_n8_4_DW_mult_tc_0)
+                                                          0.00       0.83 f
+  Multiplier_2/Z[8] (Multiplier_n8_4)                     0.00       0.83 f
+  Adder_2/A[2] (Adder_n7_0)                               0.00       0.83 f
+  Adder_2/add_16/A[2] (Adder_n7_0_DW01_add_0)             0.00       0.83 f
+  Adder_2/add_16/U1_2/S (FA_X1)                           0.16       0.98 r
+  Adder_2/add_16/SUM[2] (Adder_n7_0_DW01_add_0)           0.00       0.98 r
+  Adder_2/Z[2] (Adder_n7_0)                               0.00       0.98 r
+  Adder_1/B[2] (Adder_n8_0)                               0.00       0.98 r
+  Adder_1/add_16/B[2] (Adder_n8_0_DW01_add_0)             0.00       0.98 r
+  Adder_1/add_16/U39/ZN (NAND2_X1)                        0.04       1.02 f
+  Adder_1/add_16/U40/ZN (NAND3_X1)                        0.03       1.06 r
+  Adder_1/add_16/U17/Z (XOR2_X1)                          0.07       1.12 r
+  Adder_1/add_16/U18/Z (XOR2_X1)                          0.07       1.19 r
+  Adder_1/add_16/U6/Z (BUF_X2)                            0.08       1.27 r
+  Adder_1/add_16/SUM[3] (Adder_n8_0_DW01_add_0)           0.00       1.27 r
+  Adder_1/Z[3] (Adder_n8_0)                               0.00       1.27 r
+  Multiplier_1/A[3] (Multiplier_n8_0)                     0.00       1.27 r
+  Multiplier_1/mult_16/a[3] (Multiplier_n8_0_DW_mult_tc_0)
+                                                          0.00       1.27 r
+  Multiplier_1/mult_16/U230/Z (XOR2_X1)                   0.09       1.36 r
+  Multiplier_1/mult_16/U158/ZN (NAND2_X2)                 0.06       1.42 f
+  Multiplier_1/mult_16/U319/ZN (OAI22_X1)                 0.07       1.48 r
+  Multiplier_1/mult_16/U36/S (FA_X1)                      0.12       1.60 f
+  Multiplier_1/mult_16/U187/ZN (INV_X1)                   0.03       1.63 r
+  Multiplier_1/mult_16/U220/ZN (OAI222_X1)                0.06       1.69 f
+  Multiplier_1/mult_16/U256/ZN (NAND2_X1)                 0.05       1.74 r
+  Multiplier_1/mult_16/U241/ZN (NAND3_X1)                 0.04       1.78 f
+  Multiplier_1/mult_16/U277/ZN (NAND2_X1)                 0.04       1.81 r
+  Multiplier_1/mult_16/U279/ZN (NAND3_X1)                 0.04       1.85 f
+  Multiplier_1/mult_16/U281/ZN (NAND2_X1)                 0.04       1.89 r
+  Multiplier_1/mult_16/U274/ZN (NAND3_X1)                 0.04       1.93 f
+  Multiplier_1/mult_16/U284/ZN (NAND2_X1)                 0.04       1.97 r
+  Multiplier_1/mult_16/U287/ZN (NAND3_X1)                 0.04       2.01 f
+  Multiplier_1/mult_16/U213/ZN (NAND2_X1)                 0.04       2.04 r
+  Multiplier_1/mult_16/U215/ZN (NAND3_X1)                 0.04       2.08 f
+  Multiplier_1/mult_16/U290/ZN (NAND2_X1)                 0.03       2.12 r
+  Multiplier_1/mult_16/U293/ZN (NAND3_X1)                 0.04       2.16 f
+  Multiplier_1/mult_16/U298/ZN (NAND2_X1)                 0.04       2.20 r
+  Multiplier_1/mult_16/U299/ZN (NAND3_X1)                 0.04       2.24 f
+  Multiplier_1/mult_16/U303/ZN (NAND2_X1)                 0.03       2.27 r
+  Multiplier_1/mult_16/U305/ZN (NAND3_X1)                 0.05       2.32 f
+  Multiplier_1/mult_16/U172/ZN (XNOR2_X1)                 0.06       2.38 f
+  Multiplier_1/mult_16/product[13] (Multiplier_n8_0_DW_mult_tc_0)
+                                                          0.00       2.38 f
+  Multiplier_1/Z[13] (Multiplier_n8_0)                    0.00       2.38 f
+  Adder_3/A[7] (Adder_n8_1)                               0.00       2.38 f
+  Adder_3/add_16/A[7] (Adder_n8_1_DW01_add_0)             0.00       2.38 f
+  Adder_3/add_16/U4/ZN (XNOR2_X1)                         0.06       2.44 f
+  Adder_3/add_16/U5/Z (XOR2_X1)                           0.07       2.51 f
+  Adder_3/add_16/SUM[7] (Adder_n8_1_DW01_add_0)           0.00       2.51 f
+  Adder_3/Z[7] (Adder_n8_1)                               0.00       2.51 f
+  Reg_10/D[7] (Reg_n8_0)                                  0.00       2.51 f
+  Reg_10/U18/ZN (NAND2_X1)                                0.03       2.54 r
+  Reg_10/U17/ZN (NAND2_X1)                                0.02       2.56 f
+  Reg_10/Q_reg[7]/D (DFFR_X1)                             0.01       2.57 f
+  data arrival time                                                  2.57
+
+  clock MY_CLK (rise edge)                                2.68       2.68
+  clock network delay (ideal)                             0.00       2.68
+  clock uncertainty                                      -0.07       2.61
+  Reg_10/Q_reg[7]/CK (DFFR_X1)                            0.00       2.61 r
+  library setup time                                     -0.04       2.57
+  data required time                                                 2.57
+  --------------------------------------------------------------------------
+  data required time                                                 2.57
+  data arrival time                                                 -2.57
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1

@@ -1,0 +1,83 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : IIR_Filter
+Version: O-2018.06-SP4
+Date   : Fri Nov 12 13:58:27 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: Reg_3/Q_reg[1]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: Reg_16/Q_reg[6]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  IIR_Filter         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  Reg_3/Q_reg[1]/CK (DFFR_X1)                             0.00       0.00 r
+  Reg_3/Q_reg[1]/Q (DFFR_X1)                              0.11       0.11 r
+  Reg_3/Q[1] (Reg_n8_3)                                   0.00       0.11 r
+  Multiplier_2/A[1] (Multiplier_n8_5)                     0.00       0.11 r
+  Multiplier_2/mult_16/a[1] (Multiplier_n8_5_DW_mult_tc_0)
+                                                          0.00       0.11 r
+  Multiplier_2/mult_16/U180/Z (CLKBUF_X1)                 0.05       0.17 r
+  Multiplier_2/mult_16/U186/Z (CLKBUF_X3)                 0.06       0.23 r
+  Multiplier_2/mult_16/U347/ZN (XNOR2_X1)                 0.07       0.30 r
+  Multiplier_2/mult_16/U346/ZN (OAI22_X1)                 0.04       0.34 f
+  Multiplier_2/mult_16/U235/ZN (AND3_X1)                  0.04       0.38 f
+  Multiplier_2/mult_16/U185/Z (MUX2_X2)                   0.07       0.45 f
+  Multiplier_2/mult_16/U224/ZN (NAND2_X1)                 0.04       0.48 r
+  Multiplier_2/mult_16/U181/ZN (NAND3_X1)                 0.04       0.52 f
+  Multiplier_2/mult_16/U221/ZN (NAND2_X1)                 0.03       0.55 r
+  Multiplier_2/mult_16/U203/ZN (AND3_X2)                  0.06       0.61 r
+  Multiplier_2/mult_16/U179/ZN (OAI222_X1)                0.05       0.66 f
+  Multiplier_2/mult_16/U191/ZN (NAND2_X1)                 0.04       0.70 r
+  Multiplier_2/mult_16/U176/ZN (NAND3_X1)                 0.04       0.74 f
+  Multiplier_2/mult_16/U158/ZN (NAND2_X1)                 0.04       0.78 r
+  Multiplier_2/mult_16/U167/ZN (NAND3_X1)                 0.03       0.81 f
+  Multiplier_2/mult_16/U172/ZN (NAND2_X1)                 0.03       0.85 r
+  Multiplier_2/mult_16/U160/ZN (NAND3_X1)                 0.04       0.88 f
+  Multiplier_2/mult_16/U212/ZN (NAND2_X1)                 0.04       0.92 r
+  Multiplier_2/mult_16/U209/ZN (NAND3_X1)                 0.04       0.96 f
+  Multiplier_2/mult_16/U248/ZN (NAND2_X1)                 0.04       1.00 r
+  Multiplier_2/mult_16/U250/ZN (NAND3_X1)                 0.04       1.04 f
+  Multiplier_2/mult_16/U258/ZN (NAND2_X1)                 0.03       1.06 r
+  Multiplier_2/mult_16/U260/ZN (NAND3_X1)                 0.04       1.10 f
+  Multiplier_2/mult_16/U253/ZN (XNOR2_X1)                 0.06       1.16 f
+  Multiplier_2/mult_16/product[12] (Multiplier_n8_5_DW_mult_tc_0)
+                                                          0.00       1.16 f
+  Multiplier_2/Z[12] (Multiplier_n8_5)                    0.00       1.16 f
+  Reg_16/D[6] (Reg_n7_3)                                  0.00       1.16 f
+  Reg_16/U16/ZN (NAND2_X1)                                0.03       1.19 r
+  Reg_16/U3/ZN (NAND2_X1)                                 0.02       1.21 f
+  Reg_16/Q_reg[6]/D (DFFR_X1)                             0.01       1.22 f
+  data arrival time                                                  1.22
+
+  clock MY_CLK (rise edge)                                1.33       1.33
+  clock network delay (ideal)                             0.00       1.33
+  clock uncertainty                                      -0.07       1.26
+  Reg_16/Q_reg[6]/CK (DFFR_X1)                            0.00       1.26 r
+  library setup time                                     -0.04       1.22
+  data required time                                                 1.22
+  --------------------------------------------------------------------------
+  data required time                                                 1.22
+  data arrival time                                                 -1.22
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
