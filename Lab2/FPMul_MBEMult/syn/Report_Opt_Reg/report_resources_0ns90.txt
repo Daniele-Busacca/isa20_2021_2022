@@ -1,0 +1,140 @@
+ 
+****************************************
+Report : resources
+Design : FPmul
+Version: O-2018.06-SP4
+Date   : Wed Dec  8 21:16:49 2021
+****************************************
+
+Resource Sharing Report for design FPmul in file
+        ../src/fpmul_stage1_struct.vhd
+
+===============================================================================
+|          |              |            | Contained     |                      |
+| Resource | Module       | Parameters | Resources     | Contained Operations |
+===============================================================================
+| r4193    | DW01_add     | width=8    |               | I2/add_137           |
+| r4195    | DW01_add     | width=8    |               | I2/add_137_2         |
+| r4197    | DW01_add     | width=48   |               | I2/MBE_Multiplier/add_1121 |
+| r4199    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20 |
+| r4201    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_2 |
+| r4203    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_3 |
+| r4205    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_4 |
+| r4207    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_5 |
+| r4209    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_6 |
+| r4211    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_7 |
+| r4213    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_0/lte_20_8 |
+| r4215    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20 |
+| r4217    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_2 |
+| r4219    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_3 |
+| r4221    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_4 |
+| r4223    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_5 |
+| r4225    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_6 |
+| r4227    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_7 |
+| r4229    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_1/lte_20_8 |
+| r4231    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20 |
+| r4233    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_2 |
+| r4235    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_3 |
+| r4237    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_4 |
+| r4239    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_5 |
+| r4241    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_6 |
+| r4243    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_7 |
+| r4245    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_2/lte_20_8 |
+| r4247    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20 |
+| r4249    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_2 |
+| r4251    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_3 |
+| r4253    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_4 |
+| r4255    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_5 |
+| r4257    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_6 |
+| r4259    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_7 |
+| r4261    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_3/lte_20_8 |
+| r4263    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20 |
+| r4265    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_2 |
+| r4267    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_3 |
+| r4269    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_4 |
+| r4271    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_5 |
+| r4273    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_6 |
+| r4275    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_7 |
+| r4277    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_4/lte_20_8 |
+| r4279    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20 |
+| r4281    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_2 |
+| r4283    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_3 |
+| r4285    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_4 |
+| r4287    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_5 |
+| r4289    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_6 |
+| r4291    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_7 |
+| r4293    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_5/lte_20_8 |
+| r4295    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20 |
+| r4297    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_2 |
+| r4299    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_3 |
+| r4301    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_4 |
+| r4303    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_5 |
+| r4305    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_6 |
+| r4307    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_7 |
+| r4309    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_6/lte_20_8 |
+| r4311    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20 |
+| r4313    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_2 |
+| r4315    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_3 |
+| r4317    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_4 |
+| r4319    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_5 |
+| r4321    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_6 |
+| r4323    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_7 |
+| r4325    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_7/lte_20_8 |
+| r4327    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20 |
+| r4329    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_2 |
+| r4331    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_3 |
+| r4333    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_4 |
+| r4335    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_5 |
+| r4337    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_6 |
+| r4339    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_7 |
+| r4341    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_8/lte_20_8 |
+| r4343    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20 |
+| r4345    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_2 |
+| r4347    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_3 |
+| r4349    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_4 |
+| r4351    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_5 |
+| r4353    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_6 |
+| r4355    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_7 |
+| r4357    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_9/lte_20_8 |
+| r4359    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20 |
+| r4361    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_2 |
+| r4363    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_3 |
+| r4365    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_4 |
+| r4367    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_5 |
+| r4369    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_6 |
+| r4371    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_7 |
+| r4373    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_10/lte_20_8 |
+| r4375    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20 |
+| r4377    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_2 |
+| r4379    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_3 |
+| r4381    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_4 |
+| r4383    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_5 |
+| r4385    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_6 |
+| r4387    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_7 |
+| r4389    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_11/lte_20_8 |
+| r4391    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20 |
+| r4393    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_2 |
+| r4395    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_3 |
+| r4397    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_4 |
+| r4399    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_5 |
+| r4401    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_6 |
+| r4403    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_7 |
+| r4405    | DW_cmp       | width=3    |               | I2/MBE_Multiplier/PP_GEN/Mux_12/lte_20_8 |
+| r4407    | DW01_add     | width=25   |               | I3/I11/add_45        |
+| r4409    | DW01_add     | width=8    |               | I3/I9/add_41_aco     |
+| r4411    | DW01_add     | width=8    |               | I4/I1/add_41_aco     |
+===============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| I2/MBE_Multiplier/add_1121            |                    |                |
+|                    | DW01_add         | pparch (area,speed) | pparch        |
+| I2/add_137         | DW01_add         | pparch (area)      | pparch         |
+| I3/I11/add_45      | DW01_add         | pparch (area)      | pparch         |
+===============================================================================
+
+1

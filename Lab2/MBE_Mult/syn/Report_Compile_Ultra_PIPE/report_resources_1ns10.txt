@@ -1,0 +1,218 @@
+ 
+****************************************
+Report : resources
+Design : MBE_Mult
+Version: O-2018.06-SP4
+Date   : Sat Dec 11 02:32:22 2021
+****************************************
+
+
+Resource Report for this hierarchy in file ../src/MBE_Mult_syn.vhd
+=============================================================================
+| Cell           | Module         | Parameters | Contained Operations       |
+=============================================================================
+| add_x_1        | DW01_add       | width=48   | add_1139 (MBE_Mult_syn.vhd:1139) |
+| lte_x_2        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20 (Mux8to1.vhd:20) |
+| lte_x_3        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_4        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_5        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_6        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_7        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_9        | DW_cmp         | width=3    | PP_GEN/Mux_0/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_24       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20 (Mux8to1.vhd:20) |
+| lte_x_25       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_26       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_27       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_28       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_29       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_30       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_31       | DW_cmp         | width=3    | PP_GEN/Mux_1/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_46       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20 (Mux8to1.vhd:20) |
+| lte_x_47       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_48       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_49       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_50       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_51       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_52       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_53       | DW_cmp         | width=3    | PP_GEN/Mux_2/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_68       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20 (Mux8to1.vhd:20) |
+| lte_x_69       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_70       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_71       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_72       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_73       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_74       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_75       | DW_cmp         | width=3    | PP_GEN/Mux_3/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_90       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20 (Mux8to1.vhd:20) |
+| lte_x_91       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_92       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_93       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_94       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_95       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_96       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_97       | DW_cmp         | width=3    | PP_GEN/Mux_4/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_112      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20 (Mux8to1.vhd:20) |
+| lte_x_113      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_114      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_115      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_116      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_117      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_118      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_119      | DW_cmp         | width=3    | PP_GEN/Mux_5/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_134      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20 (Mux8to1.vhd:20) |
+| lte_x_135      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_136      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_137      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_138      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_139      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_140      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_141      | DW_cmp         | width=3    | PP_GEN/Mux_6/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_156      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20 (Mux8to1.vhd:20) |
+| lte_x_157      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_158      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_159      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_160      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_161      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_162      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_163      | DW_cmp         | width=3    | PP_GEN/Mux_7/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_178      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20 (Mux8to1.vhd:20) |
+| lte_x_179      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_180      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_181      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_182      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_183      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_184      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_185      | DW_cmp         | width=3    | PP_GEN/Mux_8/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_200      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20 (Mux8to1.vhd:20) |
+| lte_x_201      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_202      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_203      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_204      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_205      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_206      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_207      | DW_cmp         | width=3    | PP_GEN/Mux_9/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_222      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20 (Mux8to1.vhd:20) |
+| lte_x_223      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_224      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_225      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_226      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_227      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_228      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_229      | DW_cmp         | width=3    | PP_GEN/Mux_10/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_244      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20 (Mux8to1.vhd:20) |
+| lte_x_245      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_2 (Mux8to1.vhd:20) |
+| lte_x_246      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_3 (Mux8to1.vhd:20) |
+| lte_x_247      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_4 (Mux8to1.vhd:20) |
+| lte_x_248      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_5 (Mux8to1.vhd:20) |
+| lte_x_249      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_6 (Mux8to1.vhd:20) |
+| lte_x_250      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_7 (Mux8to1.vhd:20) |
+| lte_x_251      | DW_cmp         | width=3    | PP_GEN/Mux_11/lte_20_8 (Mux8to1.vhd:20) |
+| lte_x_266      | DW_cmp         | width=1    | PP_GEN/Mux_12/lte_20 (Mux8to1.vhd:20) |
+| lte_x_273      | DW_cmp         | width=3    | PP_GEN/Mux_12/lte_20_8 (Mux8to1.vhd:20) |
+=============================================================================
+
+
+Implementation Report
+===============================================================================
+|                    |                  | Current            | Set            |
+| Cell               | Module           | Implementation     | Implementation |
+===============================================================================
+| add_x_1            | DW01_add         | pparch (area,speed)                 |
+| lte_x_2            | DW_cmp           | apparch (area)     |                |
+| lte_x_3            | DW_cmp           | apparch (area)     |                |
+| lte_x_4            | DW_cmp           | apparch (area)     |                |
+| lte_x_5            | DW_cmp           | apparch (area)     |                |
+| lte_x_6            | DW_cmp           | apparch (area)     |                |
+| lte_x_7            | DW_cmp           | apparch (area)     |                |
+| lte_x_24           | DW_cmp           | apparch (area)     |                |
+| lte_x_25           | DW_cmp           | apparch (area)     |                |
+| lte_x_26           | DW_cmp           | apparch (area)     |                |
+| lte_x_27           | DW_cmp           | apparch (area)     |                |
+| lte_x_28           | DW_cmp           | apparch (area)     |                |
+| lte_x_29           | DW_cmp           | apparch (area)     |                |
+| lte_x_30           | DW_cmp           | apparch (area)     |                |
+| lte_x_31           | DW_cmp           | apparch (area)     |                |
+| lte_x_46           | DW_cmp           | apparch (area)     |                |
+| lte_x_47           | DW_cmp           | apparch (area)     |                |
+| lte_x_48           | DW_cmp           | apparch (area)     |                |
+| lte_x_49           | DW_cmp           | apparch (area)     |                |
+| lte_x_50           | DW_cmp           | apparch (area)     |                |
+| lte_x_51           | DW_cmp           | apparch (area)     |                |
+| lte_x_52           | DW_cmp           | apparch (area)     |                |
+| lte_x_53           | DW_cmp           | apparch (area)     |                |
+| lte_x_68           | DW_cmp           | apparch (area)     |                |
+| lte_x_69           | DW_cmp           | apparch (area)     |                |
+| lte_x_70           | DW_cmp           | apparch (area)     |                |
+| lte_x_71           | DW_cmp           | apparch (area)     |                |
+| lte_x_72           | DW_cmp           | apparch (area)     |                |
+| lte_x_73           | DW_cmp           | apparch (area)     |                |
+| lte_x_74           | DW_cmp           | apparch (area)     |                |
+| lte_x_75           | DW_cmp           | apparch (area)     |                |
+| lte_x_90           | DW_cmp           | apparch (area)     |                |
+| lte_x_91           | DW_cmp           | apparch (area)     |                |
+| lte_x_92           | DW_cmp           | apparch (area)     |                |
+| lte_x_93           | DW_cmp           | apparch (area)     |                |
+| lte_x_94           | DW_cmp           | apparch (area)     |                |
+| lte_x_95           | DW_cmp           | apparch (area)     |                |
+| lte_x_96           | DW_cmp           | apparch (area)     |                |
+| lte_x_97           | DW_cmp           | apparch (area)     |                |
+| lte_x_112          | DW_cmp           | apparch (area)     |                |
+| lte_x_113          | DW_cmp           | apparch (area)     |                |
+| lte_x_114          | DW_cmp           | apparch (area)     |                |
+| lte_x_115          | DW_cmp           | apparch (area)     |                |
+| lte_x_116          | DW_cmp           | apparch (area)     |                |
+| lte_x_117          | DW_cmp           | apparch (area)     |                |
+| lte_x_118          | DW_cmp           | apparch (area)     |                |
+| lte_x_119          | DW_cmp           | apparch (area)     |                |
+| lte_x_134          | DW_cmp           | apparch (area)     |                |
+| lte_x_135          | DW_cmp           | apparch (area)     |                |
+| lte_x_136          | DW_cmp           | apparch (area)     |                |
+| lte_x_137          | DW_cmp           | apparch (area)     |                |
+| lte_x_138          | DW_cmp           | apparch (area)     |                |
+| lte_x_139          | DW_cmp           | apparch (area)     |                |
+| lte_x_140          | DW_cmp           | apparch (area)     |                |
+| lte_x_141          | DW_cmp           | apparch (area)     |                |
+| lte_x_156          | DW_cmp           | apparch (area)     |                |
+| lte_x_157          | DW_cmp           | apparch (area)     |                |
+| lte_x_158          | DW_cmp           | apparch (area)     |                |
+| lte_x_159          | DW_cmp           | apparch (area)     |                |
+| lte_x_160          | DW_cmp           | apparch (area)     |                |
+| lte_x_161          | DW_cmp           | apparch (area)     |                |
+| lte_x_162          | DW_cmp           | apparch (area)     |                |
+| lte_x_163          | DW_cmp           | apparch (area)     |                |
+| lte_x_178          | DW_cmp           | apparch (area)     |                |
+| lte_x_179          | DW_cmp           | apparch (area)     |                |
+| lte_x_180          | DW_cmp           | apparch (area)     |                |
+| lte_x_181          | DW_cmp           | apparch (area)     |                |
+| lte_x_182          | DW_cmp           | apparch (area)     |                |
+| lte_x_183          | DW_cmp           | apparch (area)     |                |
+| lte_x_184          | DW_cmp           | apparch (area)     |                |
+| lte_x_185          | DW_cmp           | apparch (area)     |                |
+| lte_x_200          | DW_cmp           | apparch (area)     |                |
+| lte_x_201          | DW_cmp           | apparch (area)     |                |
+| lte_x_202          | DW_cmp           | apparch (area)     |                |
+| lte_x_203          | DW_cmp           | apparch (area)     |                |
+| lte_x_204          | DW_cmp           | apparch (area)     |                |
+| lte_x_205          | DW_cmp           | apparch (area)     |                |
+| lte_x_206          | DW_cmp           | apparch (area)     |                |
+| lte_x_207          | DW_cmp           | apparch (area)     |                |
+| lte_x_222          | DW_cmp           | apparch (area)     |                |
+| lte_x_223          | DW_cmp           | apparch (area)     |                |
+| lte_x_224          | DW_cmp           | apparch (area)     |                |
+| lte_x_225          | DW_cmp           | apparch (area)     |                |
+| lte_x_226          | DW_cmp           | apparch (area)     |                |
+| lte_x_227          | DW_cmp           | apparch (area)     |                |
+| lte_x_228          | DW_cmp           | apparch (area)     |                |
+| lte_x_229          | DW_cmp           | apparch (area)     |                |
+| lte_x_244          | DW_cmp           | apparch (area)     |                |
+| lte_x_245          | DW_cmp           | apparch (area)     |                |
+| lte_x_246          | DW_cmp           | apparch (area)     |                |
+| lte_x_247          | DW_cmp           | apparch (area)     |                |
+| lte_x_248          | DW_cmp           | apparch (area)     |                |
+| lte_x_249          | DW_cmp           | apparch (area)     |                |
+| lte_x_250          | DW_cmp           | apparch (area)     |                |
+| lte_x_251          | DW_cmp           | apparch (area)     |                |
+| lte_x_266          | DW_cmp           | apparch (area)     |                |
+===============================================================================
+
+1

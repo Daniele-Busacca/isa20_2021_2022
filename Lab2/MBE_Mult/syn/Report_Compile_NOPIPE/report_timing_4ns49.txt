@@ -1,0 +1,146 @@
+Information: Updating design information... (UID-85)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : MBE_Mult
+Version: O-2018.06-SP4
+Date   : Fri Dec 10 00:47:27 2021
+****************************************
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: X[3] (input port clocked by MY_CLK)
+  Endpoint: Z_Delay_reg[47]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  MBE_Mult           5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  input external delay                                    0.50       0.50 f
+  X[3] (in)                                               0.00       0.50 f
+  U3557/ZN (AND2_X2)                                      0.04       0.54 f
+  U6794/ZN (NOR2_X1)                                      0.05       0.60 r
+  U3520/ZN (OR2_X2)                                       0.05       0.65 r
+  U6694/ZN (INV_X1)                                       0.03       0.68 f
+  U6906/ZN (AOI22_X1)                                     0.04       0.72 r
+  U6874/ZN (OAI221_X1)                                    0.05       0.77 f
+  PP_GEN/Mux_1/Z_reg[10]/Q (DLH_X1)                       0.07       0.84 f
+  U3441/Z (BUF_X1)                                        0.04       0.88 f
+  U3372/ZN (OAI33_X1)                                     0.10       0.98 r
+  U5532/ZN (NOR2_X1)                                      0.03       1.00 f
+  S2/FA_12/OUT_FA_reg[0]/Q (DLH_X2)                       0.08       1.08 f
+  U6769/ZN (INV_X1)                                       0.04       1.12 r
+  U6687/ZN (NAND2_X1)                                     0.03       1.15 f
+  U3549/ZN (AND2_X1)                                      0.04       1.19 f
+  U3550/ZN (NOR2_X1)                                      0.04       1.23 r
+  S3/FA_12_0/OUT_FA_reg[0]/Q (DLH_X2)                     0.06       1.29 r
+  U6863/ZN (NAND2_X1)                                     0.04       1.33 f
+  U5531/ZN (AOI22_X1)                                     0.06       1.39 r
+  U5530/ZN (NOR2_X1)                                      0.02       1.41 f
+  S4/FA_12/OUT_FA_reg[0]/Q (DLH_X2)                       0.08       1.49 f
+  U6766/ZN (NAND2_X1)                                     0.04       1.53 r
+  U4348/ZN (INV_X1)                                       0.03       1.56 f
+  U6009/ZN (AOI22_X1)                                     0.04       1.61 r
+  U6859/ZN (NOR2_X1)                                      0.02       1.63 f
+  S5/FA_12/OUT_FA_reg[0]/Q (DLH_X1)                       0.08       1.70 f
+  add_1138/A[12] (MBE_Mult_DW01_add_0)                    0.00       1.70 f
+  add_1138/U244/ZN (NAND2_X1)                             0.04       1.74 r
+  add_1138/U245/ZN (NAND3_X1)                             0.05       1.79 f
+  add_1138/U65/ZN (NAND2_X1)                              0.04       1.82 r
+  add_1138/U85/ZN (NAND3_X1)                              0.03       1.86 f
+  add_1138/U145/ZN (NAND2_X1)                             0.03       1.89 r
+  add_1138/U95/ZN (NAND3_X1)                              0.04       1.93 f
+  add_1138/U286/ZN (NAND2_X1)                             0.04       1.96 r
+  add_1138/U289/ZN (NAND3_X1)                             0.04       2.00 f
+  add_1138/U67/ZN (NAND2_X1)                              0.04       2.04 r
+  add_1138/U69/ZN (NAND3_X1)                              0.03       2.07 f
+  add_1138/U323/ZN (NAND2_X1)                             0.03       2.11 r
+  add_1138/U92/ZN (NAND3_X1)                              0.04       2.14 f
+  add_1138/U349/ZN (NAND2_X1)                             0.04       2.18 r
+  add_1138/U87/ZN (NAND3_X1)                              0.04       2.22 f
+  add_1138/U362/ZN (NAND2_X1)                             0.04       2.25 r
+  add_1138/U365/ZN (NAND3_X1)                             0.04       2.29 f
+  add_1138/U329/ZN (NAND2_X1)                             0.04       2.32 r
+  add_1138/U141/ZN (NAND3_X1)                             0.04       2.37 f
+  add_1138/U64/ZN (NAND2_X1)                              0.04       2.40 r
+  add_1138/U78/ZN (NAND3_X1)                              0.03       2.44 f
+  add_1138/U119/ZN (NAND2_X1)                             0.03       2.47 r
+  add_1138/U77/ZN (NAND3_X1)                              0.04       2.51 f
+  add_1138/U386/ZN (NAND2_X1)                             0.04       2.54 r
+  add_1138/U94/ZN (NAND3_X1)                              0.04       2.58 f
+  add_1138/U218/ZN (NAND2_X1)                             0.04       2.61 r
+  add_1138/U115/ZN (NAND3_X1)                             0.04       2.65 f
+  add_1138/U427/ZN (NAND2_X1)                             0.04       2.68 r
+  add_1138/U430/ZN (NAND3_X1)                             0.04       2.72 f
+  add_1138/U205/ZN (NAND2_X1)                             0.04       2.76 r
+  add_1138/U168/ZN (NAND3_X1)                             0.04       2.79 f
+  add_1138/U186/ZN (NAND2_X1)                             0.04       2.83 r
+  add_1138/U62/ZN (NAND3_X1)                              0.04       2.87 f
+  add_1138/U193/ZN (NAND2_X1)                             0.04       2.90 r
+  add_1138/U195/ZN (NAND3_X1)                             0.04       2.94 f
+  add_1138/U172/ZN (NAND2_X1)                             0.03       2.97 r
+  add_1138/U174/ZN (NAND3_X1)                             0.04       3.01 f
+  add_1138/U343/ZN (NAND2_X1)                             0.04       3.05 r
+  add_1138/U139/ZN (NAND3_X1)                             0.04       3.08 f
+  add_1138/U357/ZN (NAND2_X1)                             0.04       3.12 r
+  add_1138/U167/ZN (NAND3_X1)                             0.04       3.16 f
+  add_1138/U274/ZN (NAND2_X1)                             0.04       3.19 r
+  add_1138/U277/ZN (NAND3_X1)                             0.04       3.23 f
+  add_1138/U280/ZN (NAND2_X1)                             0.04       3.27 r
+  add_1138/U123/ZN (NAND3_X1)                             0.04       3.30 f
+  add_1138/U212/ZN (NAND2_X1)                             0.03       3.34 r
+  add_1138/U113/ZN (NAND3_X1)                             0.05       3.38 f
+  add_1138/U73/ZN (NAND2_X1)                              0.04       3.42 r
+  add_1138/U155/ZN (NAND3_X1)                             0.03       3.45 f
+  add_1138/U162/ZN (NAND2_X1)                             0.03       3.48 r
+  add_1138/U142/ZN (NAND3_X1)                             0.04       3.52 f
+  add_1138/U417/ZN (NAND2_X1)                             0.04       3.56 r
+  add_1138/U253/ZN (NAND3_X1)                             0.04       3.60 f
+  add_1138/U423/ZN (NAND2_X1)                             0.03       3.62 r
+  add_1138/U424/ZN (NAND3_X1)                             0.04       3.66 f
+  add_1138/U10/CO (FA_X1)                                 0.10       3.75 f
+  add_1138/U375/ZN (NAND2_X1)                             0.04       3.80 r
+  add_1138/U377/ZN (NAND3_X1)                             0.04       3.84 f
+  add_1138/U74/ZN (NAND2_X1)                              0.03       3.88 r
+  add_1138/U181/ZN (NAND3_X1)                             0.04       3.91 f
+  add_1138/U401/ZN (NAND2_X1)                             0.04       3.95 r
+  add_1138/U402/ZN (NAND3_X1)                             0.04       3.98 f
+  add_1138/U405/ZN (NAND2_X1)                             0.04       4.02 r
+  add_1138/U252/ZN (NAND3_X1)                             0.04       4.06 f
+  add_1138/U410/ZN (NAND2_X1)                             0.03       4.09 r
+  add_1138/U229/ZN (NAND3_X1)                             0.05       4.13 f
+  add_1138/U63/ZN (NAND2_X1)                              0.04       4.17 r
+  add_1138/U301/ZN (NAND3_X1)                             0.03       4.20 f
+  add_1138/U293/ZN (NAND2_X1)                             0.03       4.23 r
+  add_1138/U295/ZN (NAND3_X1)                             0.03       4.26 f
+  add_1138/U379/ZN (XNOR2_X1)                             0.06       4.32 f
+  add_1138/U378/ZN (XNOR2_X1)                             0.05       4.37 f
+  add_1138/SUM[47] (MBE_Mult_DW01_add_0)                  0.00       4.37 f
+  Z_Delay_reg[47]/D (DFFRS_X1)                            0.01       4.38 f
+  data arrival time                                                  4.38
+
+  clock MY_CLK (rise edge)                                4.49       4.49
+  clock network delay (ideal)                             0.00       4.49
+  clock uncertainty                                      -0.07       4.42
+  Z_Delay_reg[47]/CK (DFFRS_X1)                           0.00       4.42 r
+  library setup time                                     -0.04       4.38
+  data required time                                                 4.38
+  --------------------------------------------------------------------------
+  data required time                                                 4.38
+  data arrival time                                                 -4.38
+  --------------------------------------------------------------------------
+  slack (MET)                                                        0.00
+
+
+1
