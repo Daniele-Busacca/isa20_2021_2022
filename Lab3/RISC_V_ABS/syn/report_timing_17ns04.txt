@@ -1,0 +1,161 @@
+Information: Updating design information... (UID-85)
+Warning: Design 'RISC_V_ABS' contains 2 high-fanout nets. A fanout number of 1000 will be used for delay calculations involving these nets. (TIM-134)
+ 
+****************************************
+Report : timing
+        -path full
+        -delay max
+        -max_paths 1
+Design : RISC_V_ABS
+Version: O-2018.06-SP4
+Date   : Sat Jan 22 12:49:35 2022
+****************************************
+
+ # A fanout number of 1000 was used for high fanout net computations.
+
+Operating Conditions: typical   Library: NangateOpenCellLibrary
+Wire Load Model Mode: top
+
+  Startpoint: REG_RD_MEM/Q_reg[2]
+              (rising edge-triggered flip-flop clocked by MY_CLK)
+  Endpoint: REG_Z_ALU_MEM/Q_reg[0]
+            (rising edge-triggered flip-flop clocked by MY_CLK)
+  Path Group: MY_CLK
+  Path Type: max
+
+  Des/Clust/Port     Wire Load Model       Library
+  ------------------------------------------------
+  RISC_V_ABS         5K_hvratio_1_1        NangateOpenCellLibrary
+
+  Point                                                   Incr       Path
+  --------------------------------------------------------------------------
+  clock MY_CLK (rise edge)                                0.00       0.00
+  clock network delay (ideal)                             0.00       0.00
+  REG_RD_MEM/Q_reg[2]/CK (DFFR_X1)                        0.00 #     0.00 r
+  REG_RD_MEM/Q_reg[2]/Q (DFFR_X1)                         0.11       0.11 r
+  REG_RD_MEM/Q[2] (Reg_n_n5_2)                            0.00       0.11 r
+  FORWARDING_UNIT/Rd_ADD_MEM[2] (FU)                      0.00       0.11 r
+  FORWARDING_UNIT/Eq_Det_Rs1_Rd_MEM/B[2] (Equal_Detector_n_n5_4)
+                                                          0.00       0.11 r
+  FORWARDING_UNIT/Eq_Det_Rs1_Rd_MEM/U2/ZN (XNOR2_X1)      0.06       0.17 r
+  FORWARDING_UNIT/Eq_Det_Rs1_Rd_MEM/U7/ZN (NAND3_X1)      0.04       0.21 f
+  FORWARDING_UNIT/Eq_Det_Rs1_Rd_MEM/U4/ZN (NOR3_X1)       0.05       0.26 r
+  FORWARDING_UNIT/Eq_Det_Rs1_Rd_MEM/Y (Equal_Detector_n_n5_4)
+                                                          0.00       0.26 r
+  FORWARDING_UNIT/Forward_Rs1/A (Forward_0)               0.00       0.26 r
+  FORWARDING_UNIT/Forward_Rs1/U5/ZN (NAND2_X1)            0.03       0.29 f
+  FORWARDING_UNIT/Forward_Rs1/U4/ZN (AND3_X1)             0.05       0.34 f
+  FORWARDING_UNIT/Forward_Rs1/Y[1] (Forward_0)            0.00       0.34 f
+  FORWARDING_UNIT/Sel_Rs1[1] (FU)                         0.00       0.34 f
+  MUX_RS1/Sel[1] (Mux3to1_n_n32_0)                        0.00       0.34 f
+  MUX_RS1/U13/ZN (NOR2_X1)                                0.05       0.38 r
+  MUX_RS1/U9/Z (BUF_X1)                                   0.10       0.48 r
+  MUX_RS1/U4/ZN (NOR2_X1)                                 0.04       0.52 f
+  MUX_RS1/U2/Z (BUF_X1)                                   0.07       0.59 f
+  MUX_RS1/U23/ZN (AOI222_X1)                              0.12       0.71 r
+  MUX_RS1/U22/ZN (INV_X1)                                 0.02       0.74 f
+  MUX_RS1/Y[0] (Mux3to1_n_n32_0)                          0.00       0.74 f
+  MUX_A/A[0] (Mux2to1_n_n32_6)                            0.00       0.74 f
+  MUX_A/U26/ZN (AOI22_X1)                                 0.04       0.78 r
+  MUX_A/U25/ZN (INV_X1)                                   0.05       0.83 f
+  MUX_A/Y[0] (Mux2to1_n_n32_6)                            0.00       0.83 f
+  ALU_BLOCK/A[0] (ALU_ABS)                                0.00       0.83 f
+  ALU_BLOCK/Comp/A[0] (Comparator_n_n32)                  0.00       0.83 f
+  ALU_BLOCK/Comp/sub_34/A[0] (Comparator_n_n32_DW01_sub_0)
+                                                          0.00       0.83 f
+  ALU_BLOCK/Comp/sub_34/U94/ZN (NOR2_X1)                  0.06       0.89 r
+  ALU_BLOCK/Comp/sub_34/U93/ZN (AND2_X1)                  0.05       0.94 r
+  ALU_BLOCK/Comp/sub_34/U92/ZN (OAI22_X1)                 0.04       0.97 f
+  ALU_BLOCK/Comp/sub_34/U91/ZN (OR2_X1)                   0.06       1.03 f
+  ALU_BLOCK/Comp/sub_34/U90/ZN (AOI22_X1)                 0.07       1.10 r
+  ALU_BLOCK/Comp/sub_34/U89/ZN (AND2_X1)                  0.05       1.15 r
+  ALU_BLOCK/Comp/sub_34/U88/ZN (OAI22_X1)                 0.04       1.18 f
+  ALU_BLOCK/Comp/sub_34/U87/ZN (OR2_X1)                   0.06       1.25 f
+  ALU_BLOCK/Comp/sub_34/U86/ZN (AOI22_X1)                 0.07       1.31 r
+  ALU_BLOCK/Comp/sub_34/U85/ZN (AND2_X1)                  0.05       1.36 r
+  ALU_BLOCK/Comp/sub_34/U84/ZN (OAI22_X1)                 0.04       1.39 f
+  ALU_BLOCK/Comp/sub_34/U83/ZN (OR2_X1)                   0.06       1.46 f
+  ALU_BLOCK/Comp/sub_34/U82/ZN (AOI22_X1)                 0.07       1.52 r
+  ALU_BLOCK/Comp/sub_34/U81/ZN (AND2_X1)                  0.05       1.57 r
+  ALU_BLOCK/Comp/sub_34/U80/ZN (OAI22_X1)                 0.04       1.60 f
+  ALU_BLOCK/Comp/sub_34/U79/ZN (OR2_X1)                   0.06       1.67 f
+  ALU_BLOCK/Comp/sub_34/U78/ZN (AOI22_X1)                 0.07       1.73 r
+  ALU_BLOCK/Comp/sub_34/U77/ZN (AND2_X1)                  0.05       1.78 r
+  ALU_BLOCK/Comp/sub_34/U76/ZN (OAI22_X1)                 0.04       1.82 f
+  ALU_BLOCK/Comp/sub_34/U75/ZN (OR2_X1)                   0.06       1.88 f
+  ALU_BLOCK/Comp/sub_34/U74/ZN (AOI22_X1)                 0.07       1.94 r
+  ALU_BLOCK/Comp/sub_34/U73/ZN (AND2_X1)                  0.05       1.99 r
+  ALU_BLOCK/Comp/sub_34/U72/ZN (OAI22_X1)                 0.04       2.03 f
+  ALU_BLOCK/Comp/sub_34/U71/ZN (OR2_X1)                   0.06       2.09 f
+  ALU_BLOCK/Comp/sub_34/U70/ZN (AOI22_X1)                 0.07       2.15 r
+  ALU_BLOCK/Comp/sub_34/U69/ZN (AND2_X1)                  0.05       2.20 r
+  ALU_BLOCK/Comp/sub_34/U68/ZN (OAI22_X1)                 0.04       2.24 f
+  ALU_BLOCK/Comp/sub_34/U67/ZN (OR2_X1)                   0.06       2.30 f
+  ALU_BLOCK/Comp/sub_34/U66/ZN (AOI22_X1)                 0.07       2.36 r
+  ALU_BLOCK/Comp/sub_34/U65/ZN (AND2_X1)                  0.05       2.41 r
+  ALU_BLOCK/Comp/sub_34/U64/ZN (OAI22_X1)                 0.04       2.45 f
+  ALU_BLOCK/Comp/sub_34/U63/ZN (OR2_X1)                   0.06       2.51 f
+  ALU_BLOCK/Comp/sub_34/U62/ZN (AOI22_X1)                 0.07       2.58 r
+  ALU_BLOCK/Comp/sub_34/U61/ZN (AND2_X1)                  0.05       2.62 r
+  ALU_BLOCK/Comp/sub_34/U60/ZN (OAI22_X1)                 0.04       2.66 f
+  ALU_BLOCK/Comp/sub_34/U59/ZN (OR2_X1)                   0.06       2.72 f
+  ALU_BLOCK/Comp/sub_34/U58/ZN (AOI22_X1)                 0.07       2.79 r
+  ALU_BLOCK/Comp/sub_34/U57/ZN (AND2_X1)                  0.05       2.83 r
+  ALU_BLOCK/Comp/sub_34/U56/ZN (OAI22_X1)                 0.04       2.87 f
+  ALU_BLOCK/Comp/sub_34/U55/ZN (OR2_X1)                   0.06       2.93 f
+  ALU_BLOCK/Comp/sub_34/U54/ZN (AOI22_X1)                 0.07       3.00 r
+  ALU_BLOCK/Comp/sub_34/U53/ZN (AND2_X1)                  0.05       3.04 r
+  ALU_BLOCK/Comp/sub_34/U52/ZN (OAI22_X1)                 0.04       3.08 f
+  ALU_BLOCK/Comp/sub_34/U51/ZN (OR2_X1)                   0.06       3.14 f
+  ALU_BLOCK/Comp/sub_34/U50/ZN (AOI22_X1)                 0.07       3.21 r
+  ALU_BLOCK/Comp/sub_34/U49/ZN (AND2_X1)                  0.05       3.25 r
+  ALU_BLOCK/Comp/sub_34/U48/ZN (OAI22_X1)                 0.04       3.29 f
+  ALU_BLOCK/Comp/sub_34/U47/ZN (OR2_X1)                   0.06       3.35 f
+  ALU_BLOCK/Comp/sub_34/U46/ZN (AOI22_X1)                 0.07       3.42 r
+  ALU_BLOCK/Comp/sub_34/U45/ZN (AND2_X1)                  0.05       3.47 r
+  ALU_BLOCK/Comp/sub_34/U44/ZN (OAI22_X1)                 0.04       3.50 f
+  ALU_BLOCK/Comp/sub_34/U43/ZN (OR2_X1)                   0.06       3.56 f
+  ALU_BLOCK/Comp/sub_34/U42/ZN (AOI22_X1)                 0.07       3.63 r
+  ALU_BLOCK/Comp/sub_34/U41/ZN (AND2_X1)                  0.05       3.68 r
+  ALU_BLOCK/Comp/sub_34/U40/ZN (OAI22_X1)                 0.04       3.71 f
+  ALU_BLOCK/Comp/sub_34/U39/ZN (OR2_X1)                   0.06       3.77 f
+  ALU_BLOCK/Comp/sub_34/U38/ZN (AOI22_X1)                 0.07       3.84 r
+  ALU_BLOCK/Comp/sub_34/U37/ZN (AND2_X1)                  0.05       3.89 r
+  ALU_BLOCK/Comp/sub_34/U36/ZN (OAI22_X1)                 0.04       3.92 f
+  ALU_BLOCK/Comp/sub_34/U35/ZN (NOR2_X1)                  0.05       3.97 r
+  ALU_BLOCK/Comp/sub_34/U34/ZN (OAI22_X1)                 0.04       4.01 f
+  ALU_BLOCK/Comp/sub_34/U2_31/S (FA_X1)                   0.11       4.12 f
+  ALU_BLOCK/Comp/sub_34/DIFF[31] (Comparator_n_n32_DW01_sub_0)
+                                                          0.00       4.12 f
+  ALU_BLOCK/Comp/Mux/D (Mux4to1_OB)                       0.00       4.12 f
+  ALU_BLOCK/Comp/Mux/U8/ZN (AOI22_X1)                     0.06       4.18 r
+  ALU_BLOCK/Comp/Mux/U6/ZN (OAI21_X1)                     0.03       4.21 f
+  ALU_BLOCK/Comp/Mux/U4/ZN (AOI22_X1)                     0.04       4.26 r
+  ALU_BLOCK/Comp/Mux/U3/ZN (INV_X1)                       0.02       4.28 f
+  ALU_BLOCK/Comp/Mux/Y (Mux4to1_OB)                       0.00       4.28 f
+  ALU_BLOCK/Comp/Y[0] (Comparator_n_n32)                  0.00       4.28 f
+  ALU_BLOCK/Mux7to1/E[0] (Mux7to1_n_n32)                  0.00       4.28 f
+  ALU_BLOCK/Mux7to1/U37/ZN (AOI22_X1)                     0.05       4.33 r
+  ALU_BLOCK/Mux7to1/U139/ZN (NAND3_X1)                    0.04       4.37 f
+  ALU_BLOCK/Mux7to1/Y[0] (Mux7to1_n_n32)                  0.00       4.37 f
+  ALU_BLOCK/Z[0] (ALU_ABS)                                0.00       4.37 f
+  REG_Z_ALU_MEM/D[0] (Reg_n_n32_37)                       0.00       4.37 f
+  REG_Z_ALU_MEM/U7/ZN (NAND2_X1)                          0.03       4.40 r
+  REG_Z_ALU_MEM/U6/ZN (OAI21_X1)                          0.03       4.43 f
+  REG_Z_ALU_MEM/Q_reg[0]/D (DFFR_X1)                      0.01       4.44 f
+  data arrival time                                                  4.44
+
+  clock MY_CLK (rise edge)                               17.04      17.04
+  clock network delay (ideal)                             0.00      17.04
+  clock uncertainty                                      -0.07      16.97
+  REG_Z_ALU_MEM/Q_reg[0]/CK (DFFR_X1)                     0.00      16.97 r
+  library setup time                                     -0.04      16.93
+  data required time                                                16.93
+  --------------------------------------------------------------------------
+  data required time                                                16.93
+  data arrival time                                                 -4.44
+  --------------------------------------------------------------------------
+  slack (MET)                                                       12.49
+
+
+1
