@@ -2,7 +2,7 @@ class packet_in extends uvm_sequence_item;
      rand bit [31:0] A;
      rand bit [31:0] B;
 
-	constraint new_range_A { A[30:23] inside {[75:190]}; B[30:23] inside {[75:190]}; } 
+	constraint new_range_A { A[30:23] inside {[64:190]}; B[30:23] inside {[64:190]}; } 
 
     `uvm_object_utils_begin(packet_in)
         `uvm_field_int(A, UVM_ALL_ON|UVM_HEX)
